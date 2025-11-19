@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nur 'Ain Nuhaa — Information Management Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#f7c8dc;--black:#111;--white:#fff;--max-width:1100px}
+    *{box-sizing:border-box}
+
+    body{
+      font-family:'Montserrat',sans-serif;
+      margin:0;
+      color:var(--black);
+      line-height:1.5;
+      background-color:#fff8e7; 
+    }
+
+    header.hero{background:var(--pink);padding:80px 20px;text-align:center}
+    header .brand{font-size:40px;letter-spacing:3px}
+    header .brand strong{font-weight:700}
+    header .tag{font-family:'Great Vibes',cursive;font-size:44px;margin-top:-6px;display:block}
+    .btn{display:inline-block;padding:10px 22px;background:#000;color:#fff;border-radius:24px;text-decoration:none;margin-top:18px}
+
+    .statement{background:#111;color:#fff;padding:70px 20px;text-align:center}
+    .statement h2{font-size:36px;margin:0}
+    .statement .accent{color:var(--pink);font-family:'Great Vibes',cursive;font-size:46px}
+
+    main{max-width:var(--max-width);margin:0 auto;padding:40px 20px}
+    .about{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
+    .about .text{flex:1;min-width:280px}
+
+    /* Center main photo */
+    .photo{
+      width:200px;
+      margin:0 auto;
+      text-align:center;
+    }
+    .photo img{
+      width:100%;
+      border-radius:8px;
+      display:block;
+    }
+
+    .skills{margin-top:20px}
+    .skill{margin-bottom:10px}
+    .skill .label{display:flex;justify-content:space-between;font-size:13px}
+    .bar{height:10px;background:#ddd;border-radius:8px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:#111;width:60%}
+
+    .cards{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:18px}
+    .card{flex:1 1 260px;background:var(--pink);padding:18px;border-radius:8px;text-align:center}
+    .card h3{margin-top:12px}
+
+    /* Center gallery */
+    .grid{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:16px;
+      margin-top:18px;
+    }
+    .polaroid{
+      width:220px;
+      background:#fff;
+      padding:8px;
+      border:1px solid #efefef;
+      text-align:center;
+      border-radius:6px;
+    }
+    .polaroid img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:6px;
+    }
+    .caption{font-family:'Great Vibes',cursive;margin-top:8px}
+
+    /* Center contact section + buttons */
+    .contact{
+      background:#fff;
+      padding:30px;
+      text-align:center;
+      margin:30px 0;
+    }
+
+    .contact-buttons a.btn{
+      display:inline-block;
+      margin:8px;
+    }
+
+    footer{padding:20px;text-align:center;font-size:13px;color:#666}
+
+    @media(max-width:720px){
+      header .brand{font-size:28px}
+      header .tag{font-size:34px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero" role="banner">
+    <div class="brand"><strong>Nuhaa's Website</strong></div>
+    <div class="brand">STAY CALM & PRETTY</div>
+    <a class="btn" href="#about">Learn more</a>
+  </header>
+
+  <section class="statement">
+    <h2>BE ALL KINDS OF <span class="accent">Pretty</span></h2>
+  </section>
+
+  <main>
+    <div class="photo">
+      <img src="IM.jpg" alt="Photo of Nuhaa">
+    </div>
+
+    <section id="about" class="about">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>Hello, welcome to my little corner on the internet!
+My name is Nuhaa, and I’m someone who appreciates order, cleanliness, and anything that feels calm and beautiful. I have a soft spot for things that smell good and look pretty especially flowers.</p>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skill"><div class="label"><span>Makeup & Styling</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill"><div class="label"><span>Communication</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+          <div class="skill"><div class="label"><span>Teamwork</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+          <div class="skill"><div class="label"><span>Time Management</span><span>80%</span></div><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill"><div class="label"><span>Customer Service</span><span>85%</span></span></div><div class="bar"><i style="width:85%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="friends">
+      <h2>Friendships is Magic</h2>
+      <ul>
+        <li class="item">
+          <div class="photo"><img src="FF.jpg"></div>
+          I have friends whose presence I never expected Alin, Esah, and Ewin. Our friendship wasn’t planned, but I want they to know that they're some of the best people in my life. Thank you for every memory we created together, every laugh, every tear, and every moment in between. I appreciate them more than words can say.
+        </li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li class="item">
+          <h4>UiTM Sungai Petani</h4>
+          <div class="meta">Diploma in Information Management | 2023 — 2026</div>
+          <p>Currently studying record & information management with interest in organized systems and record management.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I Can Do</h2>
+      <div class="cards">
+        <div class="card"><p>Organize and manage records efficiently.</p><h3>Record Management</h3></div>
+        <div class="card"><p>Provide friendly customer service and clear communication.</p><h3>Customer Service</h3></div>
+        <div class="card"><p>Assist with styling and aesthetic choices.</p><h3>Styling & Aesthetic</h3></div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2>Gallery</h2>
+      <p>Some photos that mean a lot throughout my diploma journey.</p>
+
+      <div class="grid">
+        <div class="polaroid"><img src="WW.jpg"><div class="caption">Port Aib Bocor</div></div>
+        <div class="polaroid"><img src="bunga.jpg"><div class="caption">Flower from Love</div></div>
+        <div class="polaroid"><img src="bb.jpg"><div class="caption">Partners in Crime</div></div>
+        <div class="polaroid"><img src="NN.jpg"><div class="caption">Myself</div></div>
+        <div class="polaroid"><img src="ucing.jpg"><div class="caption">My Pet</div></div>
+        <div class="polaroid"><img src="eat.jpg"><div class="caption">Comfort Food</div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION CENTERED -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Reach out to me on Instagram, email, or WhatsApp.</p>
+
+      <div class="contact-buttons">
+        <a class="btn" href="https://instagram.com/asapsaucee" target="_blank">Instagram</a>
+        <a class="btn" href="mailto:ainnuhaa@gmail.com">Email</a>
+        <a class="btn" href="https://wa.me/60105556493" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with care by Nuhaa. Theme: pink pastel + clean modern.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.bar > i').forEach(function(el){
+      var w = el.style.width || '0%';
+      el.setAttribute('role','progressbar');
+      el.setAttribute('aria-valuemin','0');
+      el.setAttribute('aria-valuemax','100');
+      el.setAttribute('aria-valuenow', w.replace('%',''));
+    });
+  </script>
+
+</body>
+</html>
